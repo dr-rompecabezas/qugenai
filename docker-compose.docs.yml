@@ -1,0 +1,16 @@
+services:
+  docs:
+    image: qugenai_local_docs
+    container_name: qugenai_local_docs
+    build:
+      context: .
+      dockerfile: ./compose/local/docs/Dockerfile
+    env_file:
+      - ./.envs/.local/.django
+    volumes:
+      - ./docs:/docs:z
+      - ./config:/app/config:z
+      - ./qugenai:/app/qugenai:z
+    ports:
+      - '9000:9000'
+    command: /start-docs
