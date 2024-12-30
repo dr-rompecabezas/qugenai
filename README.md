@@ -3,6 +3,7 @@
 QuGenAI is an AI-powered exam content generator designed to help educators, certification providers, and trainers create high-quality, data-driven assessments in minutes. Built for flexibility and scalability, QuGenAI streamlines exam development workflows, ensuring efficiency, accuracy, and reliability.
 
 [![Built with Cookiecutter Django](https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter)](https://github.com/cookiecutter/cookiecutter-django/)
+[![codecov](https://codecov.io/gh/think-elearn/qugenai/graph/badge.svg?token=VoioOTaqbj)](https://codecov.io/gh/think-elearn/qugenai)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
 ## Target Audience
@@ -116,7 +117,7 @@ QuGenAI is a Django-based SaaS application designed to streamline the creation o
 
 #### Current Setup
 
-- Django is deployed as a single Heroku app for simplicity and cost efficiency.
+- Django is deployed as a Heroku app for simplicity and cost efficiency.
 - Celery handles background processing tasks for AI pipelines.
 - This setup prioritizes rapid development and proof-of-concept validation.
 
@@ -156,18 +157,18 @@ This project remains largely structured and completely configured per the defaul
 
 ### Email Server
 
-In development, it is often nice to be able to see emails that are being sent from your application. For that reason local SMTP server [Mailpit](https://github.com/axllent/mailpit) with a web interface is available as docker container.
+In development, it is often nice to see emails sent from your application. For that reason, the local SMTP server [Mailpit](https://github.com/axllent/mailpit) with a web interface is available as a Docker container.
 
-Container mailpit will start automatically when you will run all docker containers. Please check [cookiecutter-django Docker documentation](https://cookiecutter-django.readthedocs.io/en/latest/2-local-development/developing-locally-docker.html) for more details how to start all containers.
+The mailpit container will start automatically when you run all Docker containers. Please check the [cookiecutter-django Docker documentation](https://cookiecutter-django.readthedocs.io/en/latest/2-local-development/developing-locally-docker.html) for more details on how to start all containers.
 
 With Mailpit running, to view messages that are sent by your application, open your browser and go to `http://127.0.0.1:8025`
 
 ### Sentry
 
-Sentry is an error logging aggregator service. You can sign up for a free account at <https://sentry.io/signup/?code=cookiecutter> or download and host it yourself.
+Sentry is an error logging aggregator service. Sign up for a free account at <https://sentry.io/signup/?code=cookiecutter> or download and host it yourself.
 The system is set up with reasonable defaults, including 404 logging and integration with the WSGI application.
 
-You must set the DSN url in production.
+You must set the DSN URL in production.
 
 ## Deployment
 
@@ -183,7 +184,7 @@ See detailed [cookiecutter-django Docker documentation](https://cookiecutter-dja
 
 ## Contributing
 
-We’re at the early planning stages and welcome feedback and ideas to improve QuGenAI’s capabilities. Contributions will be open as the technical architecture solidifies.
+We’re in the early planning stages and welcome feedback and ideas to improve QuGenAI’s capabilities. As the technical architecture solidifies, contributions will be open.
 
 ## License
 
