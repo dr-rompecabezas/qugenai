@@ -184,7 +184,19 @@ See detailed [cookiecutter-django Docker documentation](https://cookiecutter-dja
 
 ## Contributing
 
-We’re in the early planning stages and welcome feedback and ideas to improve QuGenAI’s capabilities. As the technical architecture solidifies, contributions will be open.
+We welcome contributions to QuGenAI!
+
+Before you begin, please take a moment to review our **[Contributing Guidelines](.github/CONTRIBUTING.md)**. These guidelines outline our development workflow, coding standards, and expectations for contributions.
+
+Highlights include:
+
+- **Branching and Pull Requests** – Flexible naming conventions with a focus on keeping the `main` branch green and deployable.
+- **Commit Messages** – Clear and consistent formatting to ensure an understandable project history.
+- **Code Reviews** – Mandatory reviews to maintain code quality and knowledge sharing.
+
+Your feedback and ideas are also highly encouraged as we continue to evolve QuGenAI’s architecture and features.
+
+Thank you for contributing to QuGenAI!
 
 ## License
 
