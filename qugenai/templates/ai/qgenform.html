@@ -13,6 +13,8 @@
   </div>
   {% if exam_questions %}
     <h2>Generated Exam Questions:</h2>
-    {{ exam_questions }}
+    <ul>
+      {% for question in exam_questions %}<li class="list-unstyled">{{ question }}</li>{% endfor %}
+    </ul>
   {% endif %}
 {% endblock content %}
