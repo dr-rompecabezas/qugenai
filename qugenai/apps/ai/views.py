@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 from django.shortcuts import render
@@ -5,7 +6,7 @@ from openai import OpenAI
 
 from .forms import QGenForm
 
-client = OpenAI()
+client = OpenAI(api_key=settings.OPENAI_API_KEY)
 
 
 @login_required
