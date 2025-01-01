@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+  <h1>Question Generator</h1>
+  <div class="col-md-6">
+    <form action="{% url 'ai:generate_exam_questions' %}" method="post">
+      {% csrf_token %}
+      {{ form|crispy }}
+      <input type="submit" value="Generate Questions" />
+    </form>
+  </div>
+  {% if exam_questions %}
+    <h2>Generated Exam Questions:</h2>
+    {{ exam_questions }}
+  {% endif %}
+{% endblock content %}
