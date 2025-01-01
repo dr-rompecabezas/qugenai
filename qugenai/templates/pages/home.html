@@ -1,1 +1,15 @@
 {% extends "base.html" %}
+
+{% block content %}
+  <h1>👋 Welcome to QuGenAI!</h1>
+  <p>
+    <span class="fw-bold">QuGenAI</span> is an open source <span class="font-monospace text-warning bg-dark">AI-powered exam content generator</span> designed to help educators, certification providers, and trainers create high-quality, data-driven assessments in minutes. Built for flexibility and scalability, QuGenAI streamlines exam development workflows, ensuring efficiency, accuracy, and reliability.
+  </p>
+  <p>
+    <a href="https://github.com/think-elearn/qugenai"
+       class="text-decoration-none">
+      View on GitHub
+      {% include "icons/svg/github.html" %}
+    </a>
+  </p>
+{% endblock content %}
