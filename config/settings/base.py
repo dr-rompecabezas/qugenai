@@ -352,4 +352,5 @@ SPECTACULAR_SETTINGS = {
 
 # OpenAI
 # ------------------------------------------------------------------------------
-OPENAI_API_KEY = env("OPENAI_API_KEY", default=None)
+# Set the default OPENAI_API_KEY environment variable to a fake value for testing
+OPENAI_API_KEY = env("OPENAI_API_KEY", default="fake-api-key")
