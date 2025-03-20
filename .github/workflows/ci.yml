@@ -13,6 +13,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      # prevent openai.OpenAIError
+      OPENAI_API_KEY: "fake-key"
 
     steps:
     - uses: actions/checkout@v4
