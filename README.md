@@ -40,4 +40,3 @@ uv run pytest tests.py
 ## Screenshot
 
 ![QuGenAI application interface](https://github.com/user-attachments/assets/c969cf0b-359a-4a80-9aee-ffe017bb2dc4)
-
