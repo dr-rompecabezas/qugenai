@@ -17,7 +17,7 @@ This is a proof-of-concept project that demonstrates how to use the OpenAI API t
 Clone the repository and install the dependencies with [uv](https://docs.astral.sh/uv/).
 
 ```shell
-git clone https://github.com/thinkelearn/qugenai
+git clone https://github.com/dr-rompecabezas/qugenai
 cd qugenai
 uv sync
 ```
